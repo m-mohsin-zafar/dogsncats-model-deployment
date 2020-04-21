@@ -12,7 +12,7 @@ checkpoint_dir = os.path.join(os.getcwd(), 'checkpoints')
 def get_model():
     chk_pt = os.path.join(checkpoint_dir, 'cnn_trained_10layer.pth')
     model = TenLayerConvNet()
-    model.load_state_dict(torch.load(chk_pt))
+    model.load_state_dict(torch.load(chk_pt, map_location='cpu'), strict=False)
     model.eval()
     return model
 
