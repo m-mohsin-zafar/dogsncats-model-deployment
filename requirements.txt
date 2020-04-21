@@ -1,5 +1,5 @@
 Flask==1.1.1
-https://download.pytorch.org/whl/cpu/torch_stable.html
+https://download.pytorch.org/whl/cpu/torch-1.2.0%2Bcpu-cp37-cp37m-manylinux1_x86_64.whl
 torchvision==0.4.0
 numpy==1.15.4
 Pillow==5.4.1
