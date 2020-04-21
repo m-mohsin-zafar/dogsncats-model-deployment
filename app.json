@@ -1,0 +1,5 @@
+{
+  "name": "Pets Classifier Torch",
+  "description": "Cats Vs. Dogs Classifier Built Using PyTorch and Flask",
+  "keywords": ["python", "flask", "pytorch", "cats", "dogs"]
+}

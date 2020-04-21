@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pets Clf App</title>
+    <link rel="stylesheet" href="/static/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/assets/css/Bootstrap-Image-Uploader.css">
+    <link rel="stylesheet" href="/static/assets/css/Drag--Drop-Upload-Form.css">
+    <link rel="stylesheet" href="/static/assets/css/Highlight-Clean.css">
+    <link rel="stylesheet" href="/static/assets/css/Login-Form-Dark.css">
+    <link rel="stylesheet" href="/static/assets/css/styles.css">
+</head>
+
+<body>
+    <div class="highlight-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Pets Classifiaction Example</h2>
+                <p class="text-center">This is an example deployment of a PyTorch Model that uses a 10 Layer CNN Model to
+                    Classify Dogs Vs. Cats</p>
+            </div>
+            <div class="buttons"><a class="btn btn-primary" role="button" href="#img_upload">GET PREDICTIONS</a></div>
+        </div>
+    </div>
+    <div class="bootstrap_img_upload" id='img_upload'>
+        <div class="container py-5">
+
+            <header class="text-white text-center">
+                <h3 class="display-4">Upload Image Here</h3>
+                <img src="/static/assets/img/catsdogs.jpg" alt="" width="150" class="mb-4">
+            </header>
+
+
+            <div class="row py-4">
+                <div class="col-lg-6 mx-auto">
+                    <form method="post" enctype="multipart/form-data">
+                        <!-- Upload image input-->
+                        <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
+
+                            <input id="upload" type="file" name="file" onchange="readURL(this);"
+                                   class="form-control border-0">
+                            <label id="upload-label" for="upload" class="font-weight-light text-muted">Choose file</label>
+                            <div class="input-group-append">
+                                <label for="upload" class="btn btn-light m-0 rounded-pill px-4"> <i
+                                        class="fa fa-cloud-upload mr-2 text-muted"></i>
+                                    <small class="text-uppercase font-weight-bold text-muted">Choose file</small>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="row justify-content-center mb-4">
+                            <input class="btn btn-primary" type="submit" value="UPLOAD">
+                        </div>
+
+                        <!-- Uploaded image area-->
+                        <p class="font-italic text-white text-center">The image uploaded will be rendered inside the box
+                            below.</p>
+                        <div class="image-area mt-4"><img id="imageResult" src="#" alt=""
+                                                          class="img-fluid rounded shadow-sm mx-auto d-block"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/assets/js/jquery.min.js"></script>
+    <script src="/static/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/static/assets/js/Bootstrap-Image-Uploader.js"></script>
+</body>
+
+</html>

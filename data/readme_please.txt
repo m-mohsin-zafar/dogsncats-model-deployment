@@ -1,0 +1,1 @@
+Please Note that the link shared for dataset download was from Microsoft's website and it contained some corrupted images due to which dataset was downloaded from kaggle and its files were renamed from <pet>.<id>.jpg to <pet>_<id>.jpg
